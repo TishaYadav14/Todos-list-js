@@ -2,13 +2,6 @@
     font-family: 'Rocher';
     src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
   }
-html{
-   position:fixed;
-   top:0px;
-   bottom:0px;
-   left:0px;
-   right:0px;
-}
 
 html, body{
     height: 100vh;
