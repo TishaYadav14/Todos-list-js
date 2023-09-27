@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+html{
+   position:fixed;
+   top:0px;
+   bottom:0px;
+   left:0px;
+   right:0px;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17, 16, 16);
+    color: #230241;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.container{
+    display: flex;
+    height: 70vh;
+    margin-top: 10px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.box{
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    
+    border-radius: 5px 50px 5px 50px;
+
+    margin: 20px 20px 20px 20px;
+    padding: 10px 30px 30px 30px;
+    width: 50vw;
+    height: fit-content;
+    background-color: #D8B4F8;
+
+    background-image: linear-gradient(#D8B4F8 1.9rem, #844db4 2rem);
+    background-size: 100% 2rem;
+}
+
+.heading{
+    font-family: 'Rocher';
+    font-palette: --Purples;;
+
+
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: -50px;
+    margin-top: -50px;
+
+    /* padding: 20px; */
+}
+h1{
+    font-size: 6rem;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3px;
+}
+.image img{
+    width: 130px;
+    height: 130px;
+}
+.image p {
+    font-family: serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    /* font-style: italic; */
+    color: #520d8f;
+    margin-top: -5px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+#inputBox{
+    width: 30vw;
+    height: 60px;
+    border-radius: 30px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    background-color: #f7f8ea;
+    font-size: 22px;
+    color: #230241;
+
+}
+#inputBox::placeholder{
+    font-size: 22px;
+}
+
+#addButton{
+    width: 85px;
+    height: 62px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background-color: #3d076b;
+    color: azure;
+    cursor: pointer;
+    /* margin-left: -65px; */
+}
+
+/* .task-list{
+    display:flex;
+    justify-self: start;
+    margin-top: 30px;
+    margin-left: -350px;
+    border-color: black; 
+
+}*/
+
+ul li {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    list-style: none;
+    font-size: 30px;
+    padding: 11px 10px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+} 
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(Imgs/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 17px;
+    left: 6px;
+}
+
+ul li.checked{
+    color: #230241;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(Imgs/checked.png);
+} 
+
+ul li span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+    background: #d40909cb ;
+    border-radius: 50px;
+}
+ul li span:hover{
+    background-color: #9c0e0ecb;
+}    
+
+@font-palette-values --Purples {
+        font-family: Rocher;
+        base-palette: 6;
+      }

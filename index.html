@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d5f22ee4f8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="heading">
+          <h1>Todo's List</h1>
+        </div>
+        <div class="image">
+          <img src="Imgs/icons8-to-do-list-100.png" alt="image of a clipboard">
+          <p>What's on your agenda today?</p>
+        </div>
+        <div class="row">
+          <form class="addItems">
+            <input type="text" name="addItems" id="inputBox" placeholder="Add your tasks"/>
+            <input type="submit" value="Add" name="addItems" id="addButton" />
+          </form>
+        </div>
+        <div class="task-list">
+          <ul id="list">
+            <!-- <li class="checked">task 1</li>
+            <li>task 2</li>
+            <li>task 3</li> -->
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
